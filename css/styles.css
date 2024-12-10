@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f4f4f4;
+    --text-color: #333333; 
+    --accent-color: #ff6f61; 
+}
+
+body {
+    font-family: 'Roboto-Light', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#reasons, #services, #contact {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.services-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Roboto-Light', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color); /* Hover color */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+button:active {
+    transform: scale(0.95); /* Shrinks the button slightly when clicked */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

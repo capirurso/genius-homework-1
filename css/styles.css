@@ -100,12 +100,12 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color); /* Hover color */
-    transform: scale(1.05); /* Slightly enlarges the button */
+    background-color: var(--accent-color); 
+    transform: scale(1.05); 
 }
 
 button:active {
-    transform: scale(0.95); /* Shrinks the button slightly when clicked */
+    transform: scale(0.95); 
 }
 
 button:disabled {
